@@ -1,0 +1,161 @@
+body {
+    color: #282828;
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background-color: #dad9d9;
+}
+
+header {
+    color: #282828;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1rem 2rem;
+    background-color: #dad9d9;
+}
+
+header .logo {
+    font-weight: bold;
+}
+
+nav a {
+    margin-left: 1rem;
+    text-decoration: none;
+    color: #282828;
+}
+
+.hero {
+    position: relative;
+    height: 80vh;
+    background: url("/path-to-your-image.jpg") center center/cover no-repeat;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: white;
+    text-align: center;
+    color: #282828;
+}
+
+.hero h1 {
+    font-size: 3rem;
+    background-color: #282828;
+    padding: 1rem 2rem;
+    border-radius: 10px;
+}
+
+.picture-placeholder {
+    text-align: center;
+    padding: 2rem;
+}
+
+.picture-placeholder img {
+    width: 100%;
+    max-width: 1000px;
+    height: auto;
+    border-radius: 8px;
+    box-shadow: 0 4px 12px r#282828;
+}
+
+footer {
+    background-color: #dad9d9;
+    padding: 2rem;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    font-size: 0.9rem;
+    color: #282828;
+}
+
+.footer-left {
+    font-weight: bold;
+}
+
+.footer-right div {
+    margin-bottom: 0.5rem;
+}
+
+.button {
+    padding: 0.5rem 1rem;
+    background-color: rgb(237, 105, 52);
+    color: white;
+    border: none;
+    border-radius: 20px;
+    cursor: pointer;
+    text-decoration: none;
+}
+
+.section {
+    padding: 2rem;
+}
+
+.about-section {
+    display: flex;
+    flex-direction: row;
+    gap: 4rem;
+    margin-top: 3rem;
+    align-items: flex-start;
+}
+
+.about-image {
+    width: 200px;
+    object-fit: cover;
+}
+
+.about-text {
+    flex: 1;
+}
+
+.social-grid {
+    display: flex;
+    flex-direction: column;
+    gap: 0;
+    margin-top: 2rem;
+    border: 1px solid #dad9d9;
+    border-radius: 4px;
+    overflow: hidden;
+}
+
+.social-grid details {
+    border-top: 1px solid #282828;
+    padding: 1rem;
+    background-color: #dad9d9;
+}
+
+.social-grid details:first-child {
+    border-top: none;
+}
+
+.social-grid summary {
+    font-size: 1.7rem;
+    font-weight: bold;
+    cursor: pointer;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    color: #ed6834;
+}
+
+.social-grid summary::after {
+    content: "+";
+    font-size: 1.5rem;
+    margin-left: auto;
+    padding-left: 1rem;
+    color: #ed6834;
+}
+
+details[open] summary::after {
+    content: "−";
+}
+.about-text h2 {
+    font-size: 2.5rem;
+    color: #282828 ;
+}
+
+.about-text p {
+    font-size: 1rem;
+    color: #282828;
+}
+
+details {
+    margin-top: 1rem;
+}
