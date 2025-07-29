@@ -76,8 +76,8 @@ footer {
 
 .button {
     padding: 0.5rem 1rem;
-    background-color: rgb(237, 105, 52);
-    color: white;
+    background-color: #1F2962;
+    color: #dad9d9;
     border: none;
     border-radius: 20px;
     cursor: pointer;
@@ -103,6 +103,7 @@ footer {
 
 .about-text {
     flex: 1;
+    padding: 0 2rem;
 }
 
 .social-grid {
@@ -113,6 +114,7 @@ footer {
     border: 1px solid #dad9d9;
     border-radius: 4px;
     overflow: hidden;
+    padding: 0.4rem;
 }
 
 .social-grid details {
@@ -155,6 +157,76 @@ details[open] summary::after {
     font-size: 1rem;
     color: #282828;
 }
+
+.team-section {
+    margin-top: 3rem;
+    text-align: center;
+}
+
+.team-section h2 {
+    font-size: 2.1rem;
+    color: rgb(15, 41, 53);
+    margin-bottom: 1.5rem;
+}
+
+.main-team-btn-wrapper {
+    margin-bottom: 2rem;
+
+}
+
+.main-btn {
+    background: linear-gradient(135deg, #296DB5, #ff8a50);
+    color: white;
+    font-size: 1.2rem;
+    font-weight: bold;
+    padding: 1rem 5rem;
+    border: none;
+    border-radius: 12px;
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.15);
+    cursor: pointer;
+    transition: all 0.9s ease-in-out;
+    text-align: center;
+    width: 460px;
+}
+
+.main-btn:hover {
+    background: linear-gradient(135deg, #ff8a50, #296DB5);
+    transform: translateY(-2px);
+    box-shadow: 0 10px 18px rgba(0, 0, 0, 0.2);
+
+
+.team-table {
+    margin: 0 auto;
+    border-spacing: 1.5rem;
+}
+
+.team-btn {
+    background-color: #f2f2f2;
+    color: #333;
+    font-size: 1rem;
+    font-weight: 500;
+    padding: 0.8rem 2rem;
+    border: 2px solid #ccc;
+    border-radius: 10px;
+    width: 240px;
+    text-align: center;
+    cursor: pointer;
+    transition: all 0.5s ease-in-out;
+    display: inline-block;
+    text-decoration: none;
+}
+
+.team-btn:hover {
+    background-color: #fff;
+    border-color: #296DB5;
+    color: #296DB5;
+    box-shadow: 0 4px 10px rgba(31, 41, 98, 0.2);
+    transform: translateY(-2px);
+}
+
+
+
+
 
 details {
     margin-top: 1rem;
