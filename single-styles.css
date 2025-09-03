@@ -1,0 +1,162 @@
+/* Base */
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+  background-color: #dad9d9;
+  color: #282828;
+  scroll-behavior: smooth;
+}
+
+/* Header */
+header {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  z-index: 1000;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #dad9d9;
+  padding: 1rem 2rem; /* ✅ wider padding so Register doesn't clip */
+  box-shadow: 0 2px 8px rgba(0,0,0,0.15);
+  flex-wrap: wrap;
+}
+header img { height: 42px; margin-right: 10px; vertical-align: middle; }
+header .logo { font-weight: bold; font-size: 1.2rem; display: flex; align-items: center; }
+header .accent { color: rgb(237,104,52); }
+nav {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 1rem; /* ✅ more gap */
+}
+nav a {
+  text-decoration: none;
+  color: #282828;
+  font-size: 0.95rem;
+}
+.button {
+  padding: 0.5rem 1rem;
+  background-color: #1F2962;
+  color: #fff;
+  border-radius: 20px;
+  white-space: nowrap;
+  display: inline-block;
+}
+
+/* Section defaults */
+.section {
+  padding: 2rem 1rem 1rem;
+  max-width: 1000px;
+  margin: 0 auto;
+  scroll-margin-top: 90px; /* ✅ prevents header from covering section anchors */
+}
+.section h1 {
+  font-size: 2rem;
+  margin-bottom: 0.5rem;
+  color: #282828;
+}
+
+/* Hero Video */
+.hero-video {
+  margin-top: 90px; /* ✅ pushes video below header */
+  text-align: center;
+  padding: 0 1rem;
+}
+.hero-video iframe {
+  width: 100%;
+  max-width: 1000px;
+  height: 60vh;
+  min-height: 260px;
+  border-radius: 12px;
+  box-shadow: 0 6px 18px rgba(0,0,0,0.2);
+}
+
+/* Social */
+.social-grid {
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  overflow: hidden;
+}
+.social-grid details {
+  padding: 1rem;
+  border-top: 1px solid #ccc;
+  background: #f5f5f5;
+}
+.social-grid details:first-child { border-top: none; }
+.social-grid summary {
+  font-size: 1.2rem;
+  font-weight: bold;
+  color: #ed6834;
+  cursor: pointer;
+}
+
+/* Interviews */
+.interviews-section {
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+}
+.interview-card {
+  background: #fff;
+  border-radius: 12px;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+}
+.interview-card video { width: 100%; }
+.interview-info { padding: 1rem; }
+.interview-info h2 { color: #1F2962; }
+
+/* Team Section → horizontal slider */
+.team-section h1 {
+  margin-bottom: 1rem;
+  text-align: center;
+}
+.team-slider {
+  display: flex;
+  gap: 1rem;
+  overflow-x: auto; /* ✅ horizontal scroll */
+  padding-bottom: 1rem;
+  scroll-snap-type: x mandatory; /* ✅ snap scrolling */
+}
+.team-card {
+  flex: 0 0 240px; /* ✅ fixed width cards */
+  background: #fff;
+  border-radius: 12px;
+  padding: 1rem;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+  text-align: center;
+  scroll-snap-align: start;
+}
+.team-card img {
+  width: 100%;
+  max-width: 160px;
+  border-radius: 50%;
+  margin-bottom: 1rem;
+}
+
+/* Footer */
+footer {
+  background: #dad9d9;
+  padding: 2rem;
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+footer .accent { color: rgb(237,104,52); }
+
+/* Responsive tweaks */
+@media (max-width: 768px) {
+  header {
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+  }
+  nav { justify-content: center; margin-top: 0.6rem; }
+  .hero-video iframe { height: 40vh; }
+  .team-card { flex: 0 0 200px; }
+}
+

@@ -27,7 +27,7 @@ nav a {
 .hero {
     position: relative;
     height: 80vh;
-    background: url("/path-to-your-image.jpg") center center/cover no-repeat;
+    background: url("/visuals/main-picture.jpg") center center/cover no-repeat;
     display: flex;
     align-items: center;
     justify-content: center;
