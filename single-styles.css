@@ -109,6 +109,12 @@ nav a {
 .interview-card video { width: 100%; }
 .interview-info { padding: 1rem; }
 .interview-info h2 { color: #1F2962; }
+.interview-card iframe {
+    width: 100%;
+    height: 400px;
+    border-radius: 12px;
+    box-shadow: 0 6px 18px rgba(0, 0, 0, 0.1);
+}
 
 /* Team Section → horizontal slider */
 .team-section h1 {
