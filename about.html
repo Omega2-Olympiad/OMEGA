@@ -1,104 +1,111 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>About | OMEGA 2</title>
-    <link rel="stylesheet" href="styles.css">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>OMEGA 2 | Single Page</title>
+  <link rel="stylesheet" href="single-styles.css">
 </head>
 <body>
-    <header>
-        <div class="logo">
-            <img src="./visuals/logo.png" alt="Omega Logo" style="height: 52px; vertical-align: middle; margin-right: 10px;">
-            <span>OMEGA <span style="color: rgb(237, 104, 52);">2</span></span>
-        </div>
-        <nav>
-            <a href="index.html">Home</a>
-            <a href="interviews.html" >Interviews</a>
-            <a href="https://forms.gle/sb8DehmA4xcPex2N6" class="button">Register</a>
-        </nav>
-    </header>
-
-    <div class="picture-placeholder" style="position: relative;">
-      <img src="./visuals/main-picture.jpg" alt="Main Visual" style="width: 100%; height: 60vh; object-fit: cover;">
-        <h1 style="position: absolute; top: 45%; left: 50%; transform: translate(-50%, -50%); color: #282828; background-color: rgba(218, 217, 217, 0.8); padding: 1rem 2rem; border-radius: 10px;">ABOUT US</h1>
+  <!-- Fixed Header -->
+  <header>
+    <div class="logo">
+      <img src="./visuals/logo.png" alt="Omega Logo">
+      <span>OMEGA <span class="accent">2</span></span>
     </div>
+    <nav>
+      <a href="#info">Info</a>
+      <a href="#social">Social</a>
+      <a href="#interviews">Interviews</a>
+      <a href="#team">Team</a>
+      <a href="https://forms.gle/sb8DehmA4xcPex2N6" class="button">Register</a>
+    </nav>
+  </header>
 
-   <div class="section">
-        <div class="about-section">
-            <div class="about-text">
-                <h2>Our goal</h2>
-                <p>
-                  The Olympiad is designed to inspire 9th and 10th grade students to engage with learning in a meaningful and exciting way. By solving creative, interdisciplinary challenges in subjects such as STEM, economics, and history, students are encouraged to think beyond standard school material and explore real-world connections between disciplines.</p>
+  <!-- Hero Section with Video -->
+  <section class="hero-video">
+    <iframe src="https://www.youtube.com/embed/WObh3Ors3RA" 
+      title="YouTube video player" frameborder="0" allowfullscreen>
+    </iframe>
+  </section>
 
-<p>
-                  Working in pairs, participants develop not only their academic knowledge but also essential skills such as critical thinking, problem-solving, and collaboration. The Olympiad highlights how different fields intersect and how they can be applied in future studies and careers.
+  <!-- Info Section -->
+  <section id="info" class="section">
+    <h1>About the Olympiad</h1>
+    <p>OMEGA 2 ir starpdisciplināra olimpiāde 9.–10. klašu skolēniem, kuras mērķis ir ieinteresēt jauniešus zinātnes apguvē un parādīt dažādu jomu savstarpējo saistību.</p>
+    <p>Dalībniekiem būs uzdevumi šādās disciplīnās: matemātika, fizika, ķīmija, vēsture, ekonomika, bioloģija, ģeogrāfija. Olimpiāde norisināsies divās kārtās — tiešsaistē un klātienē.</p>
+  </section>
 
-                  Our mission is to foster intellectual curiosity, empower young people to discover their potential, and create an environment where learning is both challenging and rewarding.
-                </p>
-                <div class="project-video">
-  <iframe width="560" height="315" 
-    src="https://www.youtube.com/embed/WObh3Ors3RA" 
-    title="YouTube video player" 
-    frameborder="0" 
-    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" 
-    allowfullscreen>
-  </iframe>
-</div>
+  <!-- Social Media -->
+  <section id="social" class="section">
+    <h1>Social Media</h1>
+   
+        <h3>Instagram</h3>
+        <p>Follow us: <a href="https://www.instagram.com/omega2_info/">@omega2_info</a></p>
+      
+        <h3>YouTube</h3>
+        <p>Watch interviews: <a href="#">Omega 2</a></p>
+      
+  </section>
 
-    <p class="video-caption">
-        Our project presented at United Nations High Level Political Forum in New York this summer.
-    </p>
-<div class="section team-section">
-  <h2>Meet the Team</h2>
+  <!-- Interviews -->
+  <section id="interviews" class="section interviews-section">
+    <h1>Interviews</h1>
 
-  <div class="team-buttons">
-    <a href="Mark.html" target="_blank" class="main-btn">Mark Shirokii</a>
-    <a href="Sofija.html" target="_blank" class="main-btn">Sofija Kleina</a>
-    <a href="Dmitrijs.html" target="_blank" class="main-btn">Dmitrijs Mironovs</a>
+    
+    <div class="interview-card">
+      <video controls poster="person2-thumbnail.jpg">
+        <source src="./visuals/UNHLPF_speech.mp4" type="video/mp4">
+      </video>
+      <div class="interview-info">
+        <h2>Morten Hansen</h2>
+        <p class="bio"><strong>Bio:</strong> Head of Economics Department, Stockholm School of Economics in Riga</p>
+        <p class="description">In this interview, he shares his experience in economic education as a student and professor.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- Team Section -->
+  <section id="team" class="section team-section">
+  <h1>Meet the Team</h1>
+  <div class="team-slider">
+    <div class="team-card">
+      <img src="./visuals/mark.jpg" alt="Mark">
+      <h2>Mark Shirokii</h2>
+      <h3>Founder of OMEGA 2</h3>
+      <p>Latvian National Physics, Chemistry Olympiad Winner</p>
+      <p>European Physics Olympiad participant</p>
+      <p>Harvard SSP 2025 student</p>
+    </div>
+    <div class="team-card">
+      <img src="./visuals/dmitrijs.jpg" alt="Dmitrijs">
+      <h2>Dmitrijs Mironovs</h2>
+      <h3>Co-Founder of Omega 2</h3>
+      <p>World Economics Cup Finalist</p>
+      <p>Latvian National Economics Olympiad Winner</p>
+      <p>International Business Olympiad Finalist
+      </p>
+    </div>
+    <div class="team-card">
+      <img src="./visuals/sofija.jpg" alt="Sofija">
+      <h2>Sofija Kleina</h2>
+      <h3>Co-Founder of Omega 2</h3>
+      <p>OOS 2025 participant in Biochemistry and Medicine</p>
+      <p>Researcher at RTU Faculty of Chemistry</p>
+      <p>Founder of SyntheticsIns, an organic chemistry community</p>
+    </div>
+    
+    <!-- add more if needed -->
   </div>
-</div>
+</section>
 
-
-               
-</div>
-            </div>
-        </div>
-    <div class="about-section">
-        <div class="about-text">
-        <h2>Social Media</h2>
-        </div>
+  <!-- Footer -->
+  <footer>
+    <div class="footer-left">OMEGA<span class="accent">2</span></div>
+    <div class="footer-right">
+      <p><strong>Location:</strong> Riga State Gymnasium No.1</p>
+      <p><strong>Contact:</strong> omega2_contact@gmail.com | 23881356</p>
     </div>
-        <div class="social-grid">
-            <details>
-                <summary>Instagram</summary>
-                <p>Follow us for visual insights, stories, and the latest event highlights at <a href="https://www.instagram.com/omega2_info/?igsh=Y2VqNHloZGVlMWpm&utm_source=qr#">@omega2_info</a>.</p>
-            </details>
-            <details>
-                <summary>YouTube</summary>
-                <p>Watch recorded interviews on our YouTube channel <a href="#">Omega 2</a>.</p>
-            </details>
-        </div>
-    </div>
-
-    <footer>
-         <div class="footer-left" style="font-size: 1.5rem;">OMEGA<span style="color: rgb(237, 104, 52);">2</span></div>
-        <div class="footer-right">
-            <table>
-                <tr>
-                    <th style="text-align: left; padding-right: 2rem; font-size: 1.2rem;">Location</th>
-                    <th style="text-align: left; font-size: 1.2rem;">Contact</th>
-                </tr>
-                <tr>
-                    <td>Riga State Gymnasium No.1</td>
-                    <td>omega2_contact@gmail.com</td>
-                </tr>
-                <tr>
-                    <td></td>
-                    <td>23881356</td>
-                </tr>
-            </table>
-        </div>
-    </footer>
+  </footer>
 </body>
 </html>
