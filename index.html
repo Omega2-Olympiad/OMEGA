@@ -31,11 +31,79 @@
 
   <!-- Info Section -->
   <section id="info" class="section">
-    <h1>About the Olympiad</h1>
-    <p>OMEGA 2 ir starpdisciplināra olimpiāde 9.–10. klašu skolēniem, kuras mērķis ir ieinteresēt jauniešus zinātnes apguvē un parādīt dažādu jomu savstarpējo saistību.</p>
-    <p>Dalībniekiem būs uzdevumi šādās disciplīnās: matemātika, fizika, ķīmija, vēsture, ekonomika, bioloģija, ģeogrāfija. Olimpiāde norisināsies divās kārtās — tiešsaistē un klātienē.</p>
-  </section>
+  <h1>General Information</h1>
 
+  <button class="collapsible">Our Mission</button>
+  <div class="content">
+    <p>We believe that students should see the relevance of education to their lives and futures. By tying global challenges to school subjects, Omega 2 motivates young scholars to:</p>
+    <ul>
+      <li>Pursue knowledge with greater purpose</li>
+      <li>Recognize the value of diverse professions</li>
+      <li>Build resilience and adaptability for the future</li>
+    </ul>
+  </div>
+
+  <button class="collapsible">About Omega 2</button>
+  <div class="content">
+    <p>The Omega 2 Project was founded by Mark Shirokii, Youth Representative of Latvia at the United Nations High-Level Political Forum 2025. Omega 2 was created to address a growing challenge: many students feel that school subjects are disconnected from their future aspirations, leading to lost motivation and missed opportunities.</p>
+    <p>Omega 2 bridges this gap by linking academic knowledge with real-world professions. Through competitions, interviews with professionals, and hands-on challenges, students gain a clearer vision of how their interests connect to future careers.</p>
+  </div>
+
+  <button class="collapsible">The Olympiad</button>
+  <div class="content">
+    <p>The Omega 2 Olympiad is the core activity of the project — an annual competition where students tackle challenges inspired by the world’s most pressing problems.</p>
+    <h3>Topics covered</h3>
+    <ul>
+      <li>Extreme Weather & the Climate Crisis</li>
+      <li>Biodiversity Loss and Ecosystem Collapse</li>
+      <li>Natural Resource Shortages</li>
+      <li>Armed Conflicts and Verification Technologies</li>
+      <li>AI Safety and Emerging Technologies</li>
+      <li>Health and Well-Being</li>
+      <li>Plastic Pollution</li>
+      <li>Air Pollution</li>
+      <li>Ocean Acidification</li>
+      <li>Soil Degradation and Food Security</li>
+    </ul>
+  </div>
+
+  <button class="collapsible">Opportunities for Students</button>
+  <div class="content">
+    <ul>
+      <li>Compete for prizes from a €1,000 prize pool</li>
+      <li>Gain exposure to real-world scientific applications</li>
+      <li>Connect with leading professionals through interviews</li>
+      <li>Explore career pathways in science, technology, and beyond</li>
+      <li>Develop teamwork, creativity, and problem-solving skills</li>
+    </ul>
+  </div>
+
+  <button class="collapsible">Competition Format</button>
+  <div class="content">
+    <ul>
+      <li>Round 1 (Online – 26.09.2025): Gamified problem-solving tasks combining math, physics, chemistry, biology, economy and social sciences. Students work through interactive scenarios such as hurricane simulations, climate modeling, or ecosystem restoration puzzles.</li>
+      <li>Round 2 (Final – 22.11.2025): Selected finalists compete in a live event featuring deeper problem-solving, teamwork, and presentations.</li>
+    </ul>
+    <p>All tasks are designed to be accessible to high school students, with provided background theory and step-by-step guidance — no prior advanced knowledge required.</p>
+  </div>
+</section>
+
+
+
+<script>
+  const coll = document.querySelectorAll(".collapsible");
+  coll.forEach(btn => {
+    btn.addEventListener("click", function () {
+      this.classList.toggle("active");
+      const content = this.nextElementSibling;
+      if (content.style.display === "block") {
+        content.style.display = "none";
+      } else {
+        content.style.display = "block";
+      }
+    });
+  });
+</script>
   <!-- Social Media -->
   <section id="social" class="section">
     <h1>Social Media</h1>
@@ -95,18 +163,43 @@
       <p>Founder of SyntheticsIns, an organic chemistry community</p>
     </div>
      <div class="team-card">
-      <img src="./visuals/tyler.jpg" alt="Sofija">
+      <img src="./visuals/tyler.jpg" alt="Tyler">
       <h2>Tyler Andrew Natorca</h2>
-      <h3>Co-Founder of Omega 2</h3>
+      <h3>Social Media Director</h3>
       <p>International Olympiad of Astronomy and Astrophysics participant</p>
       <p>Latvian National and Open Physics Olympiad winner</p>
       <p>Founder of SchoolSched, education oriented startup</p>
     </div>
     
+    
     <!-- add more if needed -->
+
   </div>
 </section>
 
+<details class="extra-team">
+  <summary><h1>Special thanks to:</h1></summary>
+  <div class="team-collapsible">
+  <div class="team-slider">
+  <div class="team-card">
+      <img src="./visuals/peteris.jpg" alt="Peteris">
+      <h2>Peteris Imants Mezciems</h2>
+      <h3>Olympiad Name Author</h3>
+      <p>International Chemistry Olympiad participant</p>
+      <p>-</p>
+      <p>-</p>
+    </div>
+    <div class="team-card">
+      <img src="./visuals/greta.jpg" alt="Greta">
+      <h2>Greta Rubene</h2>
+      <h3>Olympiad Name Co-Author</h3>
+      <p>-</p>
+      <p>-</p>
+      <p>-</p>
+    </div>
+  </div>
+</div>
+</details>
   <!-- Footer -->
   <footer>
     <div class="footer-left">OMEGA<span class="accent">2</span></div>
